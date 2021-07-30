@@ -1,0 +1,12 @@
+//A Method that throws an Exception
+// Don't really understand 
+
+public static void addRecord(User user) throws IOException{		//static here
+	PrintWriter out = new PrintWriter(
+		new FileWriter("UserEmail.txt", true); // throws IOException
+		out.println(user.getFirstName() + "\t" + user.getLastName() + "\t" + user.getEmailAddress());
+		out.close(); 				//throws IOException
+)
+}
+
+\\ t = tab; 

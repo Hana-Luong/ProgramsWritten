@@ -1,0 +1,10 @@
+Final classes					//so subclass
+	public final class String{}
+	public final class Math{}
+	public final class Book{}
+	public final class FinancialCalculations{}
+
+Final methods
+	public final int getQuantity(){
+		return quantity;
+	}

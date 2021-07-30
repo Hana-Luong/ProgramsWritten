@@ -1,0 +1,24 @@
+//How to cast an object: TWO DIFFERENT WAYS
+
+BookOrder order1 = new BookOrder("WARP", 2);
+Object object = order1;				//cast BookOrder to Object
+BookOrder order2 = (BookOrder) object;		//cst Object to BookOrder
+
+//How casting affects methods
+
+Object object = new BookOrder("WARP", 2);
+String orderString = object.toString();		//OK, method in Object class
+//double total = object.getTotal();		//not OK, method in the BookOrder class
+BookOrder order = (BookOrder)object;		//Assume that order belongs to the Object class
+						//Now cast its back to BookOrder
+double total.orget.getTotal();			//OK
+
+//The start of a method that accepts an Object object as an argument
+
+public boolean equals(Object object){
+	if(object instanceofBookOrder){
+		BookOrder order 2 = (BookOrder) object; 
+	//
+	}
+}
+

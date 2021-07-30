@@ -1,0 +1,21 @@
+//same object
+Book book1 = new Book("WARP");
+Book book2 = book1;
+if(book1.Book(book2)) //true
+
+//different object storing the same data
+Book book1 = new Book("WARP");
+Book book2 = new Book("WARP");
+if(book1.equals(book2)) //false
+
+//Override
+public boolean equals(Object object){
+	if(object instanceofBook){
+		Book book2 = (Book)object; //CASTING down?
+
+		//just compare the values of the two objects down here
+		if(code.equals(book2.getCode())&&title.equals(book2.getTitle)&&price == book2.getPrice())
+		return true;
+	}
+	return false;
+}

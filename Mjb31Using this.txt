@@ -1,0 +1,36 @@
+this.instanceVariable = an instance variable of the current object
+this.methodName(argument) = calling a method of the current object
+this(arguments) = CALL ANOTHER CONSTRUCTOR OF THE SAME CLASS, HOW?
+object.methodName(this) = PASS THE CURRENT OBJEC TO a method.
+Class.methodName(this) = PASS THE CURRENT OBJECT TO a static method. 
+
+//How to refer to an instance varioable when a parameter has the same name
+
+public BookOrder(String code, int quantity){
+	book = new Book(code);
+	this.quantity = quantity;
+	setTotal();
+}
+
+//How to call a method of the current object
+public void printTimetoConsole(){
+	this.setTime();			//unnecesary but clear
+	String time = this.getTime()	//unnecssary but clear
+	System.out.println(time);
+}
+
+//How to call another constructor of the same class
+public BookOrder(){
+	this("", 1);
+}
+public BookOrder(String code){
+	this(code, 1);
+}
+public BookOrder(String code, int quantity){
+	//code for initializing instance variables.
+}//CHAINING
+
+//How to pass the current object to a method???????
+public void print(){
+	System.out.println(this); 
+}

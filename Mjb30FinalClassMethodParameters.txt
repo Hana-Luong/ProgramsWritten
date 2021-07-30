@@ -1,0 +1,23 @@
+//Final classes: cannot have subclasses
+	public final class String{}
+	public final class Math{}
+	public final class Book{}
+	public final class FinancialCalculations{}
+
+//Final methods: cannot be overriden in a sub-class
+
+public final int getQuantity(){
+	return quantity;
+}
+protected final double getTotal(){
+	return total;
+}
+
+//Final parameters: to prevent a method from assigning a new value to a parameter
+public void setQuantity(final int quantity){
+	quantity = qty;
+}
+public static void incrementQuantity(final BookOrder order){
+	int qty = order.getQuantity();
+	order.setQuantity(qty+1)
+}

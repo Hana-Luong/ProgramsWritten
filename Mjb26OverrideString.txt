@@ -1,0 +1,14 @@
+//The output for the toString method of the Object class
+//Book@4abc9 = the object; We want the values of the object. 
+//class name @hash code for that object.
+
+//The toString method of the Book class
+public String toString(){		//ISN'T THAT toString() given?
+	public String toString(){
+		NumberFormat currency = NumberFormat.getCurrencyInstance();
+		String orderString = "Code: " + code + "\n" + "Title: " + title + "\n"
+					+ "Price: " + currency.format(price) + "\n"; 
+		return orderString;
+	}
+	
+}
