@@ -1,0 +1,26 @@
+PASS BY VALUE
+
+//a method that changes the value of a primitive type
+
+public static int incrementQuantity(int qty){
+	return qty+1;
+}
+
+//Pass a primitive type to this method
+int quantity = 2;
+quantity = PassTest.incrementQuantity(quantity);
+//PassTest is a class.
+//incrementQuantity is the method above, belong to PassTest Class somewhere/
+//pass 2 inside, increase by 1, result is 3, return 3;
+-------------
+PASS BY REFERENCE
+//Objects are passed by reference
+
+//A method that changes a value stored in an object
+public static void incrementQuantity(BookOrder order){ //no return value
+	int qty = order.getQuantity();			//object dot method
+	order.setQuantity(qty+1);
+}
+//Codes that pass an objec to this method
+BookOrder order = new BookOrder("WARP", 2);
+PassTest.incrementQuantity(order);			//the object "order"
